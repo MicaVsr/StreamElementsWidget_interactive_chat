@@ -1,0 +1,115 @@
+:root {  
+  --text-color: {{textColor}};
+  --base-neon: {{baseNeonColor}};
+  --softer-neon: {{softerNeonColor}};
+  --darker-neon: {{darkerNeonColor}};
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  font-family: 'Caveat', cursive;
+  color: white;
+}
+
+.neon-button {
+  font-size: 6rem;
+
+  display: inline-block;
+  color: var(--text-color);
+  
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 5px var(--softer-neon), 
+    0 0 10px var(--softer-neon), 
+    0 0 15px var(--darker-neon), 
+    0 0 20px var(--darker-neon), 
+    0 0 30px var(--base-neon);
+
+  position: relative;
+  animation: blinker 5s linear infinite;
+}
+
+.neon-text {
+	text-align: center;
+}
+
+@keyframes blinker {
+  0% {
+    text-shadow: 0 0 5px var(--softer-neon), 
+    0 0 10px var(--softer-neon), 
+    0 0 15px var(--darker-neon), 
+    0 0 20px var(--darker-neon), 
+    0 0 30px var(--base-neon);
+  }
+  4% {
+    text-shadow: 0 0 5px var(--softer-neon), 
+    0 0 10px var(--softer-neon), 
+    0 0 15px var(--darker-neon), 
+    0 0 20px var(--darker-neon), 
+    0 0 30px var(--base-neon);
+  }  
+  5% {
+    text-shadow: none;
+  }
+  6% {
+    text-shadow: 0 0 5px var(--softer-neon), 
+    0 0 10px var(--softer-neon), 
+    0 0 15px var(--darker-neon), 
+    0 0 20px var(--darker-neon), 
+    0 0 30px var(--base-neon);
+  }  
+  100% {
+    text-shadow: 0 0 5px var(--softer-neon), 
+    0 0 10px var(--softer-neon), 
+    0 0 15px var(--darker-neon), 
+    0 0 20px var(--darker-neon), 
+    0 0 30px var(--base-neon);
+  }
+}
+
+@keyframes blinker2 {
+  0% {
+    opacity: 100%;
+  }
+  3% {
+    opacity: 100%;
+  }
+  6% {
+    opacity: 70%;
+  }
+  7% {
+    opacity: 100%;
+  }
+  8% {
+    opacity: 70%;
+  }
+  9% {
+    opacity: 100%;
+  }
+  10% {
+    opacity: 70%;
+  }
+  20% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

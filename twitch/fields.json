@@ -1,0 +1,42 @@
+{
+  "manaOnText": {
+    "type": "text",
+    "label": "Texto: Maná prendido",
+    "value": "Tiren maná"
+  },
+  "manaOffText": {
+    "type": "text",
+    "label": "Texto: Maná apagado",
+    "value": "No tiren maná"
+  },
+  "manaOnCommand": {
+    "type": "text",
+    "label": "Comando para prender maná",
+    "value": "!manaon'"
+  },
+  "manaOffCommand": {
+    "type": "text",
+    "label": "Comando para apagar maná",
+    "value": "!manaoff'"
+  },
+  "textColor": {
+    "type": "colorpicker",
+    "label": "Color de texto",
+    "value": "#ffeaf5"
+  },
+  "baseNeonColor": {
+    "type": "colorpicker",
+    "label": "NEÓN: Color base",
+    "value": "#c5009f"
+  },
+  "softerNeonColor": {
+    "type": "colorpicker",
+    "label": "NEÓN: Color un poco más claro",
+    "value": "#dd8fad"
+  },
+  "darkerNeonColor": {
+    "type": "colorpicker",
+    "label": "NEÓN: Color un poco más oscuro",
+    "value": "#db468d"
+  }
+}
