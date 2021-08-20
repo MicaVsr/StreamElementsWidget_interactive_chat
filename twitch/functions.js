@@ -67,7 +67,7 @@ function setManaStatus(status){
 
 function updateManaInOverlay(){
   	if(manaIsOn){
-     	$("#status_container").html(`<p class="neon-text mana-on">${manaOnText}</p>`)
+     	$("#status_container").html(`<p class="neon-text mana-on">{manaOnText}</p>`)
     } else {
     	$("#status_container").html(`<p class="neon-text mana-off">{manaOffText}</p>`)
     }
